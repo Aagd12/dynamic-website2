@@ -3,7 +3,7 @@ const db = "mongodb+srv://saurabh:saurabh@123t@cluster0.7cw4e.mongodb.net/dancew
 mongoose.connect("db", {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 }).then(() => {
     console.log("connection successful");
 }).catch(() => {
