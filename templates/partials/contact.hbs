@@ -13,65 +13,73 @@
 
 <body>
 
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <div
-                        class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
-                        <input type="text" name="fname" placeholder="Enter your first nmee">
+    <div class="container-fluid mt-5 ">
+        <form action="/contact" method="post" class="contactpart">
+        <center>
+             <h1 id="contactus">contact us</h1>
+            
+        </center>
+                   
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <input type="text" name="fname" placeholder="Enter your first name">
+                        </div>
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <input type="text" name="fname" placeholder="Enter your last name">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <div
-                        class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
-                        <input type="email" name="email" placeholder="Enter your email">
+            <div class="row mb-5">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <input type="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <input type="password" name="password" placeholder="Enter your password">
+                        </div> 
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <input type="phone" name="phone" placeholder="Enter your phone no">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row mb-5">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <label for="gender">
 
-        <div class="row  mb-5" >
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <div
-                        class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
-                        <input type="phone" name="phone" placeholder="Enter your phone no">
+                                <input type="radio" name="gender" value="male" placeholder="male">
+                                <label for="gender">male</label>
+                                <input type="radio" name="gender" value="femail" placeholder="femail">
+                                <label for="gender">female</label>
+                            </label>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="row mb-5">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <div
-                        class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
-                        <label for="gender">
-                  
-                            <input type="radio" name="gender" value="male" placeholder="male">
-                            <input type="radio" name="gender" value="femail" placeholder="femail">
-                        </label>
-
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row mb-5">
+                        <div
+                            class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
+                            <button class="btn-style btn-success" type="submit">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row mb-5">
-                    <div
-                        class="col-md-6 col-12 mx-auto order-md-0 order-1 hero-text d-flex justify-content-center flex-column text-align-start">
-                       <button class="btn-style btn-success" type="submit">submit</button> 
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
 
 
