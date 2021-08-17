@@ -4,6 +4,7 @@ let s = require("./src/db/conn");
 const hbs = require("hbs");
 const app = express();
 const mongoose = require('mongoose');
+const bodyparser = require('body-parser');
 const port = process.env.PORT || 3000
     // setting the path
 const static_path = path.join(__dirname, "./public");
