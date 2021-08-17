@@ -132,8 +132,20 @@ label {
     color: #000;
 }
 
-.readmore {
+#readmore1 {
     display: none;
+}
+
+#readmore2 {
+    display: none;
+}
+
+.readmore1 {
+    display: block;
+}
+
+.readmore2 {
+    display: block;
 }
 
 .btn-style {
@@ -365,17 +377,6 @@ input {
 .slide4 {
     height: 239px;
     width: 400px;
-}
-
-.contactpart::before {
-    content: "";
-    position: absolute;
-    bottom: 10px;
-    z-index: -1;
-    width: 500px;
-    height: 500px;
-    background: url('/public/images/contact.jpg') no-repeat center;
-    background-size: cover;
 }
 
 .footer {

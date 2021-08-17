@@ -21,8 +21,9 @@
             <h1>WE WILL HELP YOU to</h1>
             <h1>GROW YOUR BISUNESS</h1>
             <P>WE Are Team Of <span class="bold-style"> ProFessionsl Developer ✌️</span> </P>
-            <button class="btn-style btn-primary read1"><a href="#readmore"></a> Read more</button>
-            <p id="readmore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi nobis rem dolorum molestiae!
+            <button class="btn-style btn-primary read1" id="read1"><a href="#read1"></a> Read more</button>
+            <p id="readmore1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi nobis rem
+              dolorum molestiae!
               Dolorem, ducimus rem? Sed labore nulla, harum perspiciatis quam fugiat doloribus nisi consequuntur ullam
               quas neque.</p>
           </div>
@@ -44,8 +45,9 @@
             <h1>GROW YOUR BISUNESS</h1>
             <P>Welocome To Saurabh Technical That Grow Your <span class="bold-style"> ProFessionsl Developer ✌️</span>
             </P>
-            <button class="btn-style btn-primary read2"> <a href="#readmore"></a> Read more</button>
-             <p id="readmore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi nobis rem dolorum molestiae!
+            <button class="btn-style btn-primary read2" id="read2"> <a href="#read2"></a> Read more</button>
+            <p id="readmore2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi nobis rem
+              dolorum molestiae!
               Dolorem, ducimus rem? Sed labore nulla, harum perspiciatis quam fugiat doloribus nisi consequuntur ullam
               quas neque.</p>
           </div>
@@ -64,8 +66,33 @@
   {{>gallary}}
   {{>contact}}
   {{>footer}}
-  <script src="../jq/jquery.js" type="text/javascript"></script>
-  <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script>
+    let read3 =document.getElementById("readmore1");
+   let read4= document.getElementById("readmore2");
+    
+    document.getElementById("read1").addEventListener("mouseover", ()=> {
+      console.log("click ocur");
+      read3.addclassList = read3;
+      read3.style.display = "block";
+    })
+    document.getElementById("read1").addEventListener("mouseout", ()=> {
+     
+      
+      read3.style.display = "none";
+    })
+    document.getElementById("read2").addEventListener("mouseover", () => {
+      console.log("click ocur");
+      read4.addclassList = read4;
+      read4.style.display = "block";
+    })
+    document.getElementById("read2").addEventListener("mouseout", () => {
+     
+      
+      read4.style.display = "none";
+    })
+  </script>
+  <script src="./jq/jquery.js" type="text/javascript"></script>
+  <script src="./js/bootstrap.js" type="text/javascript"></script>
 </body>
 
 </html>
