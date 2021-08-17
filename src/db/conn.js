@@ -1,10 +1,11 @@
-const mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Saurabhdyanmic",{
-   useCreateIndex:true,
-   useNewUrlParser:true,
-   useUnifiedTopology:true 
-}).then(()=>{
-   console.log("connection successful"); 
-}).catch( ()=>{
+const mongoose = require("mongoose");
+const db = "mongodb+srv://saurabh:saurabh@123t@cluster0.7cw4e.mongodb.net/dancewebsite?retryWrites=true&w=majority";
+mongoose.connect("db", {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log("connection successful");
+}).catch(() => {
     console.log("no connection");
 });
