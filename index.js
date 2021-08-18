@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-let s = require("./src/db/conn");
+require("./src/db/conn");
 const hbs = require("hbs");
 const app = express();
 const mongoose = require('mongoose');
