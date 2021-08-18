@@ -17,12 +17,11 @@ app.use('/js', express.static(path.join(__dirname, "./node_modules/bootstrap/dis
 app.use('/jq', express.static(path.join(__dirname, "./node_modules/bootstrap/dist/jq")))
 const kittySchema = new mongoose.Schema({
     fname: String,
-    name: String,
-    age: Number,
+    flast: String,
     gender: String,
     email: String,
     phone: Number,
-    password: Number
+    password: String
 });
 
 
